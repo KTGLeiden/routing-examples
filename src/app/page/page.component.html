@@ -1,0 +1,4 @@
+<p>page {{ pageNumber }} works!</p>
+
+<a *ngIf="pageNumber > 0" [routerLink]="['..', pageNumber - 1]">Prev page</a>
+<a [routerLink]="['..', pageNumber + 1]">Next page</a>

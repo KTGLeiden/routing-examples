@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { PageComponent } from './page/page.component';
+import { NotFoundComponent } from '../not-found/not-found.component';
+import { PageComponent } from '../page/page.component';
 
 const routes: Routes = [
   {
-    path: 'pages/:id',
+    path: 'page',
     component: PageComponent
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'page'
   },
   {
     path: '**',

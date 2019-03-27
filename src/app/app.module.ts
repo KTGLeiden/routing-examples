@@ -7,6 +7,7 @@ import { PageComponent } from './page/page.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PageTwoComponent } from './page-two/page-two.component';
 import { PageOneComponent } from './page-one/page-one.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PageOneComponent } from './page-one/page-one.component';
     PageComponent,
     NotFoundComponent,
     PageTwoComponent,
-    PageOneComponent
+    PageOneComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
